@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Hưng Họa Sĩ</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./front.js" defer></script>
+</head>
+<!--  -->
+
+<body>
+    <div class="header">
+        <button class="link" onClick="window.location.reload();">
+            <img src="/Pictures/taigga.jpg" alt="home">
+        </button>
+    </div>
+    
+    <div class="main">
+        <div class="board">
+            <div class="squared">
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="color-board">
+                <button onclick="changeColor('red')" class="color" id="red"> 
+                    
+                </button>
+                <button onclick="changeColor('blue')" class="color" id="blue">
+                    
+                </button>
+                <button onclick="changeColor('yellow')" class="color" id="yellow">
+                    
+                </button>
+                <button onclick="changeColor('black')" class="color" id="black">
+                    
+                </button>
+                <button onclick="changeColor('random')" class="color" >
+                    
+                </button>
+            </div>
+            <div class="size-container">
+                <input type="text" 
+                placeholder="Size of board" 
+                value="16" 
+                onchange="changeSize(this.value)"/>
+
+                <button class="yes">
+                yes
+                </button>
+
+                <div id="slider-range"></div>
+            </div>
+            <div class="tool">
+                <button class="color" onclick="changeColor('white')" id="white">
+                    eraser
+                </button>
+                
+                <button class="clear" onclick="" > clear
+                    
+                </button>
+                    
+            </div>
+            </div>
+
+           
+
+        </div>
+
+
+</body>
+</html>
